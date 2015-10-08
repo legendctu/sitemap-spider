@@ -7,6 +7,9 @@ $todo = array();
 $result = array();
 
 fetch($site);
+foreach($result as $d){
+    echo $d['url'], "\n";
+}
 
 function fetch($url){
     global $fileExt;
